@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+/* Apply full height to root container */
+.flexlayout__layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sidebar fixed height */
+#sidebarMenu {
+  height: 200px;
+  overflow-y: auto;
+}
+
+/* Main content flexes to remaining space */
+#mainTabSet, #mainTabSet1, #mainTabSet2 {
+  flex: 1;
+  overflow-y: auto;
+}
+
